@@ -1,5 +1,5 @@
 {
-  "name": "Kochubot",
+  "name": "fx.karthikbot",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
   "logo": "https://telegra.ph/file/1a1b855984d7ef30e8e17.png",
   "keywords": [
@@ -27,7 +27,7 @@
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "SonOfLars"
+      "value": "DK121DK"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
