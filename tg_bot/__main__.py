@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {}, എന്റെ പേര്: *{}*! എന്നെ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ആഡ് ചെയ്യാൻ നോക്കി സമയം കളയണ്ട, എന്നെ [fx_karthik](https://t.me/fx_karthik) ഗ്രൂപ്പിൽ മാത്രമേ ആഡ് ചെയ്യാൻ കഴിയൂ...!!!
+ഹായ് {}, എന്റെ പേര്: *{}*! എന്നെ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ആഡ് ചെയ്യാൻ നോക്കി സമയം കളയണ്ട, എന്നെ @fx_karthik ഗ്രൂപ്പിൽ മാത്രമേ ആഡ് ചെയ്യാൻ കഴിയൂ...!!!
 
 """
 
@@ -140,12 +140,10 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text= "Our group", url="t.me/fx_karthik".format(bot.username)),  InlineKeyboardButton(text="Our channel", url="https://t.me/joinchat/yvDEhnSpDY03YWNl")],
-                     [InlineKeyboardButton(text="Made by", url="https://t.me/DK121DK"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/KochuUpdates")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/stealthtechnogaming?sub_confirmation=1"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
-
+                    [[InlineKeyboardButton(text= "🗣️ ᴏᴜʀ ɢʀᴏᴜᴘ ", url="t.me/fx_karthik".format(bot.username)),  InlineKeyboardButton(text="👥 ᴏᴜʀ ᴄʜᴀɴɴᴇʟ", url="https://t.me/joinchat/yvDEhnSpDY03YWNl")],
+                     [InlineKeyboardButton(text="ᴍʏ ᴄʀᴇᴀᴛᴏʀ", url="https://t.me/DK121DK"), 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("എന്താ...")
 
 
 # for test purposes
